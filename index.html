@@ -24,19 +24,9 @@ video recording of the meeting
 -->
     <header>
         <h1>Improving The School Wifi Meeting</h1>
+        <h2> <em>Doing the <b>Impossibles</b> </em></h2>
+        <h3>Date: 10/10/2021</h3>
 
-        <table>
-            <tr>
-                <th>
-                    <h2>
-                        <em>Doing the impossibles</em>
-                    </h2>
-                </th>
-                <th>
-                    <h3>October 1st 2021</h3>
-                </th>
-            </tr>
-        </table>
     </header>
 
     <details>
@@ -104,7 +94,7 @@ video recording of the meeting
 
 
     <section id="attendence-section">
-        <h1> - 1. Attendence - </h1>
+        <h2> - 1. Attendence - </h2>
 
         <h3> (1) Honorable Guests: </h3>
         <table>
@@ -161,7 +151,7 @@ video recording of the meeting
     <hr>
 
     <section id="agenda-section">
-        <h1> - 2. Agenda - </h1>
+        <h2> - 2. Agenda - </h2>
         <ol>
             <li>Action Items from <i>last meeting (9/19/21)</i></li>
             <li>Today's Topics</li>
@@ -172,21 +162,22 @@ video recording of the meeting
 
     <hr>
     <section id="action-section">
-        <h1> - 3. Action Items - </h1>
+        <h2> - 3. Action Items - </h2>
         <ol>
             <li>Announce the start of school</li>
             <li>Screw the students by not providing housing</li>
-            <ul>
-                <li>Raise the housing price</li>
-                <li>Stack the students on top of each other</li>
-                <li>Mess up the parking just for fun so they don't park here</li>
-            </ul>
+            <li>
+                <ul>
+                    <li>Raise the housing price</li>
+                    <li>Stack the students on top of each other</li>
+                    <li>Mess up the parking just for fun so they don't park here</li>
+                </ul>
+            </li>
             <li>Move all their long anticipated classes online</li>
             <li>Make a lot of random rules and change them all the time</li>
             <li>Ask students to check <a
                     href="https://returntolearn.ucsd.edu/?_ga=2.135790577.1598050501.1632685599-2121678549.1610391149">here</a>
                 for constant update</li>
-
         </ol>
 
     </section>
@@ -194,7 +185,7 @@ video recording of the meeting
 
     <hr>
     <section id="topic-section">
-        <h1> - 4. Discussion Topics -</h1>
+        <h2> - 4. Discussion Topics -</h2>
         <ul>
             <li>Start by talking about how to make the wifi worse</li>
             <li>Promise people we will do more</li>
@@ -235,7 +226,7 @@ video recording of the meeting
 
     <hr>
     <section id="misc-section">
-        <h1> - 5. Miscellaneous Topics - </h1>
+        <h2> - 5. Miscellaneous Topics - </h2>
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore recusandae iste autem voluptatem aut, cumque
             vel dignissimos dicta sint nihil consequatur asperiores nesciunt atque veniam reiciendis vero consectetur
             consequuntur! Accusamus.
@@ -272,7 +263,7 @@ video recording of the meeting
 
     <hr>
     <section id="graph-section">
-        <h1> - 6. Graph Section - </h1>
+        <h2> - 6. Graph Section - </h2>
         <h3>This is what our wifi looks like</h3>
         <img src="/media/img1.jpg" alt="Wifi Meme" width="400">
 
@@ -286,19 +277,19 @@ video recording of the meeting
 
     <hr>
     <section id="meeting-records">
-        <h1> - 7. Meeting Recordings - </h1>
+        <h2> - 7. Meeting Recordings - </h2>
 
         <ul>
             <li>Audio Recording of the meeting
-                <audio controls>this
-                    <source src="media/never.mp3" type="audio/mpeg">
+                <audio controls src="media/never.mp3">
+                    <!-- <source src="media/never.mp3" type="audio/mpeg"> -->
                 </audio>
             </li>
 
 
             <li>
                 Video Recording of the meeting
-                <video width="400" controls>
+                <video width="400" controls >
                     <source src="/media/meeting.mp4" type="video/mp4">
                 </video>
 
@@ -308,7 +299,7 @@ video recording of the meeting
 
     <hr>
     <footer>
-        <h2>Contact Form</h2>
+        <h3>Contact Form</h3>
         <p>talk to us if you think there are some ways you can improve our wifi</p>
 
         <form>
@@ -317,31 +308,31 @@ video recording of the meeting
                 <legend>Personal Information:</legend>
 
                 <label for="name">Name:</label>
-                <input type="text"><br><br>
+                <input type="text" id="name"><br><br>
 
                 <label for="email">Email</label>
-                <input type="text" name="lname"><br><br>
+                <input type="text" id="email"><br><br>
 
                 <label for="birthday">DOB:</label>
                 <input type="date" id="birthday" name="birthday"><br><br>
 
                 <div id="wifi-quality">
                     <p>How good do you think the wifi is?</p>
-                    <input type="radio" name="quality">
-                    <label for="qu">Good</label>
+                    <input type="radio" name="quality" id="q1">
+                    <label for="q1">Good</label>
 
-                    <input type="radio" name="quality">
-                    <label for="qu">Normal</label>
+                    <input type="radio" name="quality" id="q2">
+                    <label for="q2">Normal</label>
 
-                    <input type="radio" name="quality">
-                    <label for="qu">Bad</label>
+                    <input type="radio" name="quality" id="q3">
+                    <label for="q3">Bad</label>
                 </div>
 
                 <br><br>
                 <div id="college">
                     <label for="college-choice">What College Are You From:</label>
-                    <input list="ucsd-colleges" id="college-choice" name="college-choice"/>
-                    
+                    <input list="ucsd-colleges" id="college-choice" name="college-choice" />
+
                     <datalist id="ucsd-colleges">
                         <option value="Revelle">
                         <option value="John Muir">
@@ -351,13 +342,11 @@ video recording of the meeting
                         <option value="Sixth">
                         <option value="Seventh">
                     </datalist>
-            
+
                 </div>
 
-
-                <label for="">Comments</label>
-                <textarea name="" id="" cols="30" rows="10"></textarea>
-
+                <label>Comments</label>
+                <textarea cols="30" rows="10"></textarea>
 
                 <input type="checkbox">
                 <label> I am aware of the terms and conditions</label><br><br>
