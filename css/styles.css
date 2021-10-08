@@ -13,3 +13,7 @@ nav {
 #attendence-section {
     background-color: blue;
 }
+
+h2 ~ p {
+    font-size: large;
+}
