@@ -27,40 +27,55 @@ h2 {
     text-align: center;
 }
 
-
-    h3 {
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 1em;
-    }
-
-    .center {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 50%;
-    }
+section.big {
+    background-color: aliceblue;
+}
 
 
+h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+}
 
-    /* nav bar */
-    ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        width: 200px;
-        background-color: #f1f1f1;
-    }
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
 
-    li a {
-        display: block;
-        color: black;
-        padding: 8px 16px;
-        text-decoration: none;
-        text-align: center;
-    }
 
-    /* Change the link color on hover */
-    li a:hover {
-        background-color: grey;
-        color: white;
-    }
+
+/* nav bar */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #f1f1f1;
+}
+
+li a {
+    display: block;
+    color: black;
+    padding: 8px 16px;
+    text-decoration: none;
+    text-align: center;
+}
+
+/* Change the link color on hover */
+li a:hover {
+    background-color: grey;
+    color: white;
+}
+
+
+/* combinator  */
+
+li:first-of-type+li {
+    color: blueviolet;
+}
+
+p~span {
+    background-color: red;
+}
